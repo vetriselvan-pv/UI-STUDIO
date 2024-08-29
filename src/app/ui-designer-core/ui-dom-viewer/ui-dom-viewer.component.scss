@@ -1,0 +1,13 @@
+.ui-dom-elememt{
+  border: 1.5px dashed #ddd;
+  min-height: 50px;
+  background: whitesmoke;
+  margin: 4px;
+  .ui-dom-info{
+    border: 1px solid #fff;
+    background-color: #fff;
+    height: 30px;
+    padding: 4px;
+    max-width: fit-content;
+  }
+}

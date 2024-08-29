@@ -1,0 +1,19 @@
+<div class="ui-dom-viewer">
+  @if ( uiStore.DomElements(); as DomElement) {
+  <ng-container [ngTemplateOutlet]="uielement" [ngTemplateOutletContext]="{  $implicit : DomElement}"></ng-container>
+  }
+</div>
+
+
+
+<ng-template #uielement let-data>
+  @for ( dom of data ; track $index) {
+  @let color = 'color' | uiColorGen ;
+  <div [uiDraggable]="dom"   [uiDroppable]="{ zone : dom.tag }" (droppableComplete)="onDrop($event,dom)" class="dropable-area" class="ui-dom-elememt" [ngClass]="dom.cssClass" [ngStyle]="{borderColor: color}">
+    <div class="dropable-area" [ngStyle]="{color: color}" class="ui-dom-info">
+      <span>{{ dom.tag  }}</span>
+    </div>
+    <ng-container [ngTemplateOutlet]="uielement" [ngTemplateOutletContext]="{ $implicit : dom.child }"></ng-container>
+  </div>
+  }
+</ng-template>

@@ -1,0 +1,18 @@
+
+
+<!-- drag and drop is now removed from the preview screen . because of the introduce of ui-dom-viewer
+   [uiDroppable]="{ zone : 'dbZone' }" (droppableComplete)="onDrop($event)" class="dropable-area"
+  -->
+
+<div class="designer-playground-wrapper">
+  <ng-container [ngTemplateOutlet]="uielement" [ngTemplateOutletContext]="{
+    $implicit : uiStore.DomElements()
+  }"></ng-container>
+</div>
+
+<ng-template #uielement let-data>
+  @for( element of data ; track $index){
+  <ng-container [ngTemplateOutlet]="dynamicTemplateService.getTemplate($any(element.tag))"
+    [ngTemplateOutletContext]="{ $implicit : element }"></ng-container>
+  }
+</ng-template>

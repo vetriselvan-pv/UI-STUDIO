@@ -1,0 +1,14 @@
+<div class="ui-element-attributes-wrapper">
+  @if ( mode() === 'collapsed' ) {
+  <div class="ui-element-attri-collapsed">
+    <span>collapsed</span>
+  </div>
+  }
+  @else {
+  @if (attributesList() | async; as attributes) {
+  @for (item of attributes; track $index) {
+
+  }
+  }
+  }
+</div>

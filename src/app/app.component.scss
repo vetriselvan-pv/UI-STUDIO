@@ -1,0 +1,8 @@
+@use '../../public/assets/scss/colors' as color ;
+
+.ui-app-wrapper{
+  border: 8px solid color.$primary-mild;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+}

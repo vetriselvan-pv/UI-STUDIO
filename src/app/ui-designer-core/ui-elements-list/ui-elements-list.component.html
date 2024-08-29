@@ -1,0 +1,22 @@
+<!-- @if ( uiMenuList() | async ; as uiMenus ) {
+<div class="ui-menu-container">
+  @for (menu of uiMenus; track $index) {
+  <div [uiDraggable]="menu" class="ui-menu-wrapper">
+    <span>{{ menu.tag }}</span>
+  </div>
+  }
+</div>
+}
+@else {
+<div class="card">
+  <div class="card_load"></div>
+</div>
+} -->
+<div class="ui-menu-container">
+  @for (card of emptyCardsList; track $index) {
+  <div class="card">
+    <div class="card_load"></div>
+  </div>
+  }
+</div>
+

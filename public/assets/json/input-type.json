@@ -1,0 +1,175 @@
+
+{
+    "type"  : [
+        "button",
+        "checkbox",
+        "color",
+        "date",
+        "datetime-local",
+        "email",
+        "file",
+        "hidden",
+        "image",
+        "month",
+        "number",
+        "password",
+        "radio",
+        "range",
+        "reset",
+        "search",
+        "submit",
+        "tel",
+        "text",
+        "time",
+        "url",
+        "week"
+    ],
+    "attributes" : {
+        "accept" : {
+            "type" : ["file"],
+            "description" : "Hint for expected file type in file upload controls"
+        },
+        "alt" : {
+            "type" : ["image"],
+            "description" : "alt attribute for the image type. Required for accessibility"
+        },
+        "autocapitalize" : {
+            "type" : "all except url, email, and password",
+            "description" : "Controls automatic capitalization in inputted text."
+        },
+        "autocomplete" : {
+            "type" : "all except checkbox, radio, and buttons",
+            "description" : "Hint for form autofill feature"
+        },
+        "capture" : {
+            "type" : "file",
+            "description" : "Media capture input method in file upload controls"
+        },
+        "checked" : {
+            "type" : "checkbox, radio",
+            "description" : "Whether the command or control is checked"
+        },
+        "dirname" : {
+            "type" : "hidden, text, search, url, tel, email",
+            "description" : "Name of form field to use for sending the element's directionality in form submission"
+        },
+        "disabled" : {
+            "type" : "all",
+            "description" : "Whether the form control is disabled"
+        },
+        "form" : {
+            "type" : "all",
+            "description" : "Associates the control with a form element"
+        },
+        "formaction" : {
+            "type" : "image, submit",
+            "description" : "URL to use for form submission"
+        },
+        "formenctype" : {
+            "type" : "image, submit",
+            "description" : "Form data set encoding type to use for form submission"
+        },
+        "formmethod" : {
+            "type" : "image, submit",
+            "description" : "HTTP method to use for form submission"
+        },
+        "formnovalidate" : {
+            "type" : "image, submit",
+            "description" : "Bypass form control validation for form submission"
+        },
+        "formtarget" : {
+            "type" : "image, submit",
+            "description" : "Browsing context for form submission"
+        },
+        "height" : {
+            "type" : "image",
+            "description" : "Same as height attribute for <img>; vertical dimension"
+        },
+        "list" : {
+            "type" : "all except hidden, password, checkbox, radio, and buttons",
+            "description" : "Value of the id attribute of the <datalist> of autocomplete options"
+        },
+        "max" : {
+            "type" : "date, month, week, time, datetime-local, number, range",
+            "description" : "Maximum value"
+        },
+        "maxlength" : {
+            "type" : "text, search, url, tel, email, password",
+            "description" : "Maximum length (number of characters) of value"
+        },
+        "min" : {
+            "type" : "date, month, week, time, datetime-local, number, range",
+            "description" : "Minimum value"
+        },
+        "minlength" : {
+            "type" : "text, search, url, tel, email, password",
+            "description" : "Minimum length (number of characters) of value"
+        },
+        "multiple" : {
+            "type" : "email, file",
+            "description" : "Boolean. Whether to allow multiple values"
+        },
+        "name" : {
+            "type" : "all",
+            "description" : "Name of the form control. Submitted with the form as part of a name/value pair"
+        },
+        "pattern" : {
+            "type" : "text, search, url, tel, email, password",
+            "description" : "Pattern the value must match to be valid"
+        },
+        "placeholder" : {
+            "type" : "text, search, url, tel, email, password, number",
+            "description" : "Text that appears in the form control when it has no value set"
+        },
+        "popovertarget" : {
+            "type" : "button",
+            "description" : "Designates an <input type='button'> as a control for a popover element"
+        },
+        "popovertargetaction" : {
+            "type" : "button",
+            "description" : "Specifies the action that a popover control should perform"
+        },
+        "readonly" : {
+            "type" : "all except hidden, range, color, checkbox, radio, and buttons",
+            "description" : "Boolean. The value is not editable"
+        },
+        "required" : {
+            "type" : "all except hidden, range, color, and buttons",
+            "description" : "Boolean. A value is required or must be checked for the form to be submittable"
+        },
+        "size" : {
+            "type" : "text, search, url, tel, email, password",
+            "description" : "Size of the control"
+        },
+        "src" : {
+            "type" : "image",
+            "description" : "Same as src attribute for <img>; address of image resource"
+        },
+        "step" : {
+            "type" : "date, month, week, time, datetime-local, number, range",
+            "description" : "Incremental values that are valid"
+        },
+        "type" : {
+            "type" : "all",
+            "description" : "Type of form control"
+        },
+        "value" : {
+            "type" : "all except image",
+            "description" : "The value of the control. When specified in the HTML, corresponds to the initial value"
+        },
+        "width" : {
+            "type" : "image",
+            "description" : "Same as width attribute for <img>"
+        }
+    }
+}
+
+
+
+
+//  {
+//     "_attr_" : {
+//         "type" : "_type_",
+//         "description" : "_description"
+//     }
+//  }

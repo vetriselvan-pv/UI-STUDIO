@@ -1,0 +1,71 @@
+<!-- h1 -->
+<ng-template #h1 [uiDynamicTemplate]="'h1'" let-option>
+  <h1  [id]="option.id" [ngClass]="option.cssClass">
+    <ng-container [ngTemplateOutlet]="elements" [ngTemplateOutletContext]="{ $implicit : option}"></ng-container>
+  </h1>
+</ng-template>
+<!-- h2  -->
+<ng-template #h2 [uiDynamicTemplate]="'h2'" let-option>
+  <h2 [id]="option.id" [ngClass]="option.cssClass">
+    <ng-container [ngTemplateOutlet]="elements" [ngTemplateOutletContext]="{ $implicit : option}"></ng-container>
+  </h2>
+</ng-template>
+<!-- h3 -->
+<ng-template #h3 [uiDynamicTemplate]="'h3'" let-option>
+  <h3 [id]="option.id" [ngClass]="option.cssClass">
+    <ng-container [ngTemplateOutlet]="elements" [ngTemplateOutletContext]="{ $implicit : option}"></ng-container>
+  </h3>
+</ng-template>
+<!-- h4 -->
+<ng-template #h4 [uiDynamicTemplate]="'h4'" let-option>
+  <h4 [id]="option.id" [ngClass]="option.cssClass">
+    <ng-container [ngTemplateOutlet]="elements" [ngTemplateOutletContext]="{ $implicit : option}"></ng-container>
+  </h4>
+</ng-template>
+<!-- h5 -->
+<ng-template #h5 [uiDynamicTemplate]="'h5'" let-option>
+  <h5 [id]="option.id" [ngClass]="option.cssClass">
+    <ng-container [ngTemplateOutlet]="elements" [ngTemplateOutletContext]="{ $implicit : option}"></ng-container>
+  </h5>
+</ng-template>
+<!-- h6 -->
+<ng-template #h6 [uiDynamicTemplate]="'h6'" let-option>
+  <h6 [id]="option.id" [ngClass]="option.cssClass">
+    <ng-container [ngTemplateOutlet]="elements" [ngTemplateOutletContext]="{ $implicit : option}"></ng-container>
+  </h6>
+</ng-template>
+<!-- div -->
+<ng-template #div [uiDynamicTemplate]="'div'" let-option>
+  <div [id]="option.id" [ngClass]="option.cssClass">
+    <ng-container [ngTemplateOutlet]="elements" [ngTemplateOutletContext]="{ $implicit : option}"></ng-container>
+  </div>
+</ng-template>
+<!-- span  -->
+<ng-template #span [uiDynamicTemplate]="'span'" let-option>
+  <span [id]="option.id" [ngClass]="option.cssClass">
+    <ng-container [ngTemplateOutlet]="elements" [ngTemplateOutletContext]="{ $implicit : option}"></ng-container>
+  </span>
+</ng-template>
+<!-- p  -->
+<ng-template #p [uiDynamicTemplate]="'p'" let-option>
+  <p [id]="option.id" [ngClass]="option.cssClass">
+    <ng-container [ngTemplateOutlet]="elements" [ngTemplateOutletContext]="{ $implicit : option}"></ng-container>
+  </p>
+</ng-template>
+<!-- textbox  -->
+<ng-template #textbox [uiDynamicTemplate]="'textbox'" let-option>
+  <input type="text" [name]="option.name" [id]="option.id" [ngClass]="option.cssClass" />
+</ng-template>
+
+
+<ng-template #elements let-option>
+  {{
+  option.innerText
+  }}
+  @if (option.child && option.child.length) {
+  @for( element of option.child ; track $index){
+  <ng-container [ngTemplateOutlet]="dynamicTemplateService.getTemplate($any(element.tag))"
+    [ngTemplateOutletContext]="{ $implicit : element }"></ng-container>
+  }
+  }
+</ng-template>
