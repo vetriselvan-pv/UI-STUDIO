@@ -6,16 +6,15 @@ import { UiColorGenPipe } from '@ui/pipes';
 import { UiStoreService } from '@ui/services';
 
 @Component({
-  selector: 'ui-dom-viewer',
-  standalone: true,
-  imports: [
-    CommonModule,
-    UiColorGenPipe,
-    UIDraggableDirective,
-    UIDroppableDirective,
-  ],
-  templateUrl: './ui-dom-viewer.component.html',
-  styleUrl: './ui-dom-viewer.component.scss',
+    selector: 'ui-dom-viewer',
+    imports: [
+        CommonModule,
+        UiColorGenPipe,
+        UIDraggableDirective,
+        UIDroppableDirective,
+    ],
+    templateUrl: './ui-dom-viewer.component.html',
+    styleUrl: './ui-dom-viewer.component.scss'
 })
 export class UiDomViewerComponent {
 

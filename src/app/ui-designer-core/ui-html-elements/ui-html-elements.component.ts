@@ -4,11 +4,10 @@ import { UIDraggableDirective, UIDroppableDirective, UiDynamicTemplateDirective 
 import { DynamicTemplateService } from '@ui/services';
 
 @Component({
-  selector: 'ui-html-elements',
-  standalone: true,
-  imports: [CommonModule,UiDynamicTemplateDirective,UIDraggableDirective, UIDroppableDirective],
-  templateUrl: './ui-html-elements.component.html',
-  styleUrl: './ui-html-elements.component.scss'
+    selector: 'ui-html-elements',
+    imports: [CommonModule, UiDynamicTemplateDirective, UIDraggableDirective, UIDroppableDirective],
+    templateUrl: './ui-html-elements.component.html',
+    styleUrl: './ui-html-elements.component.scss'
 })
 export class UiHtmlElementsComponent implements AfterViewInit {
   @ViewChildren(UiDynamicTemplateDirective)

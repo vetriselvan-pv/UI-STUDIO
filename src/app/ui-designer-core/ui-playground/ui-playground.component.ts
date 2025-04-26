@@ -6,11 +6,10 @@ import { IUiElement } from '../../model';
 import { UIDraggableDirective, UIDroppableDirective } from '@ui/directives';
 
 @Component({
-  selector: 'ui-playground',
-  standalone: true,
-  imports: [CommonModule, UiHtmlElementsComponent, UIDraggableDirective , UIDroppableDirective],
-  templateUrl: './ui-playground.component.html',
-  styleUrl: './ui-playground.component.scss',
+    selector: 'ui-playground',
+    imports: [CommonModule, UiHtmlElementsComponent, UIDraggableDirective, UIDroppableDirective],
+    templateUrl: './ui-playground.component.html',
+    styleUrl: './ui-playground.component.scss'
 })
 export class UiPlaygroundComponent {
 

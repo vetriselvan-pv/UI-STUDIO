@@ -5,11 +5,10 @@ import { UiPlaygroundComponent } from '../ui-playground/ui-playground.component'
 import { UiDomViewerComponent } from '../ui-dom-viewer/ui-dom-viewer.component';
 
 @Component({
-  selector: 'app-ui-designer',
-  standalone: true,
-  imports: [UiPlaygroundComponent, UiElementsListComponent, UiElementAttributesComponent, UiDomViewerComponent],
-  templateUrl: './ui-designer.component.html',
-  styleUrl: './ui-designer.component.scss'
+    selector: 'app-ui-designer',
+    imports: [UiPlaygroundComponent, UiElementsListComponent, UiElementAttributesComponent, UiDomViewerComponent],
+    templateUrl: './ui-designer.component.html',
+    styleUrl: './ui-designer.component.scss'
 })
 export class UiDesignerComponent {
 

@@ -3,11 +3,10 @@ import { Component, Signal, signal } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 @Component({
-  selector: 'ui-element-attributes',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './ui-element-attributes.component.html',
-  styleUrl: './ui-element-attributes.component.scss',
+    selector: 'ui-element-attributes',
+    imports: [CommonModule],
+    templateUrl: './ui-element-attributes.component.html',
+    styleUrl: './ui-element-attributes.component.scss'
 })
 export class UiElementAttributesComponent {
   /**

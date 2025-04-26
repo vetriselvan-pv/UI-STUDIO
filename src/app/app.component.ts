@@ -3,11 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { UiHtmlElementsComponent } from './ui-designer-core/ui-html-elements/ui-html-elements.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet,UiHtmlElementsComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [RouterOutlet, UiHtmlElementsComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit{
   title = 'studio';

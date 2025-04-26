@@ -6,11 +6,10 @@ import { UiMenuListService } from '@ui/services';
 import { Observable, of } from 'rxjs';
 
 @Component({
-  selector: 'ui-elements-list',
-  standalone: true,
-  imports: [CommonModule,UIDraggableDirective, UIDroppableDirective],
-  templateUrl: './ui-elements-list.component.html',
-  styleUrl: './ui-elements-list.component.scss',
+    selector: 'ui-elements-list',
+    imports: [CommonModule, UIDraggableDirective, UIDroppableDirective],
+    templateUrl: './ui-elements-list.component.html',
+    styleUrl: './ui-elements-list.component.scss'
 })
 export class UiElementsListComponent implements AfterViewInit {
   uiMenuList = signal<Observable<IUiElement[]>>(of([]));
